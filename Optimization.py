@@ -11,7 +11,7 @@ def objective(x):
     x1=x[0]
     y=x[1]
     funcv=((x1**2) - (10*x1) + (y**2) - (14*y) + 28) 
-    s2.append(funcv)
+    s.append(funcv)
     return (funcv)  
 def constraint_1(x):
   x1=x[0]
@@ -38,4 +38,4 @@ print(vop)
 plt.ylabel('Cost Function')
 plt.xlabel('Iteration')
 plt.title('Cost Function Vs Iteration.')
-plt.plot(range(1,len(s2)+1),s2);
+plt.plot(range(1,len(s)+1),s);
