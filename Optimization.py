@@ -25,8 +25,8 @@ def constraint(x):
   x1=x[0]
   y=x[1]
   return (x1+y-8)
-x_int=1
-y_int=1
+x_int=float(input())
+y_int=float(input())
 x0=np.array([x_int,y_int])
 con1=({'type':'eq','fun':constraint})
 sol=minimize(objective,x0,method='SLSQP',constraints=con1,options = {"disp": True})
