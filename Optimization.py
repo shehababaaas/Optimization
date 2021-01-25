@@ -27,4 +27,7 @@ sol=minimize(objective,x0,method='SLSQP',constraints=con1,options = {"disp": Tru
 xop=sol.x
 vop=sol.fun
 print(vop)
+plt.xlabel('Cost Function')
+plt.ylabel('Iteration')
+plt.title('Iteration Vs Cost Function.')
 plt.plot(range(1,len(s2)+1),s2);
